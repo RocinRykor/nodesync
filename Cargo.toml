@@ -1,0 +1,27 @@
+[package]
+name        = "nodesync"
+version     = "0.1.0"
+edition.workspace     = true
+authors.workspace     = true
+license     = "AGPL-3.0"
+repository  = "https://github.com/RocinRykor/nodesync"
+
+[lib]
+name = "nodesync"
+path = "src/lib.rs"
+
+[[bin]]
+name = "nodesync"
+path = "src/main.rs"
+
+[dependencies]
+cortex     = { workspace = true }
+commlink   = { workspace = true }
+archives   = { workspace = true }
+neuroptics = { workspace = true }
+persona    = { workspace = true }
+foundry    = { workspace = true }
+tokio      = { workspace = true }
+serde      = { workspace = true }
+serde_json = { workspace = true }
+tracing    = { workspace = true }
